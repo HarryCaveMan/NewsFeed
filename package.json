@@ -4,7 +4,8 @@
   "description": "news feed",
   "main": "main.js",
   "scripts": {
-    "test": "nodemon main"
+    "test": "nodemon main",
+    "start": "node main"
   },
   "author": "Harris Joseph",
   "license": "MIT",
