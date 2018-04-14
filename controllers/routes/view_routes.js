@@ -22,14 +22,15 @@ router.get("/", (req,res) =>{
           console.log(dbArticle);
          })
           .catch(function(err) {
-          // If an error occurred, send it to the client
-          return res.json(err);
+          // If an error occurred, do nothing
+          console.log("filtered duplicate entry");
           });
         });
         db.Article.find({})
         .then(function(dbArticle) {
-          // If we were able to successfully find Articles, send them back to the client
-          res.json(dbArticle);
+        console.log(dbArticle);
+          // If we were able to successfully find Articles, render homepage with them
+          res.render("index",{articles:dbArticle});
         })
         .catch(function(err) {
           // If an error occurred, send it to the client

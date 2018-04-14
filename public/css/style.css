@@ -1,4 +1,10 @@
  body { background-color: #F2F6D0 }
+      .col {
+
+      }
+      ul {
+        list-style-type: none;
+      }
       #wrapper {
         width: 960px;
         margin-left: auto;
@@ -6,14 +12,12 @@
         padding-top: 5%;
       }
       #articles {
-        display: inline-block;
-        overflow: auto;
-        width: 60%;
-        height: 700px;
+        overflow-y:scroll;
+        height: 400px;
+        word-wrap:break-word;
       }
       #notes {
         float: right;
-        width: 30%;
       }
       textarea, input {
         display: block;

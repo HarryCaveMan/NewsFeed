@@ -2,8 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-const axios = require("axios");
-const cheerio = require("cheerio");
+const exphbs = require("express-handlebars");
 const PORT = 8080;
 // Initialize Express
 var app = express();
@@ -17,6 +16,9 @@ app.use(logger("dev"));
 app.use(bodyParser.urlencoded({ extended: true }));
 // Use express.static to serve the public folder as a static directory
 app.use(express.static("public"));
+
+app.engine("hbs", exphbs({ defaultLayout: "main", extname: "hbs"}));
+app.set("view engine", "hbs");
 
 require('./controllers/routes')(app);
 
