@@ -22,7 +22,7 @@ router.get("/", (req,res) =>{
           console.log(dbArticle);
          })
           .catch(function(err) {
-          // If an error occurred, do nothing
+          // All db errors result in this message
           console.log("filtered duplicate entry");
           });
         });

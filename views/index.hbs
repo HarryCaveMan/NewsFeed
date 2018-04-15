@@ -7,15 +7,13 @@
       <ul>
       {{#each articles}}
         <li><a href="{{link}}">{{title}}</a></li>
-        <li><button class="btn btn-danger" data-id="{{id}}">comments</button></li>
+        <li><button class="btn btn-danger open-comments" data-id="{{id}}">comments</button></li>
         <hr>
       {{/each}}
        </ul>
       </div>
     </div>
-    <div class="col-5">
-    <h2><i>Comments</i></h2>
-      <div id="notes"></div>
+    <div id="comment-section"class="col-5">
     </div>
   </div>
 </div>

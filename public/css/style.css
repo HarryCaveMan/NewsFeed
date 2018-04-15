@@ -3,6 +3,7 @@
 
       }
       ul {
+        padding-left:0;
         list-style-type: none;
       }
       #wrapper {
@@ -11,13 +12,13 @@
         margin-right: auto;
         padding-top: 5%;
       }
-      #articles {
+      #articles,#notes {
         overflow-y:scroll;
         height: 400px;
         word-wrap:break-word;
       }
       #notes {
-        float: right;
+        width:100%;
       }
       textarea, input {
         display: block;
