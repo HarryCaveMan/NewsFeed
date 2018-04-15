@@ -4,7 +4,8 @@ $(document).on("click",".open-comments", function(event) {
 	let id = $(this).attr("data-id");
 
 	$.get(`/api/article/${id}`)
-	.done((data,status,xhr) => {       
+	.done((data,status,xhr) => { 
+	    $("#comment-section").append(`<h3><i>${data.title}</i></h3>`);
         //comment section heading
 		$("#comment-section").append("<h2><i>Comments</i></h2>");
 		 // A textarea to add a new note body
