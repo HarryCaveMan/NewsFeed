@@ -2,11 +2,35 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>Scraping With Mongoose</title>
+    <title>Scrape Reddit News</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css"> 
 </head>
 <body>
+	<header>
+    <nav class="navbar navbar-expand-lg navbar-inverse">
+        <a class="navbar-brand" href="#">Reddit News Scraper</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        	<form id="login-form" onsubmit="return false">
+	            <ul class="navbar-nav mr-auto">
+	                <li class="nav-item">
+	                    <input class="login-input" id="uname" type="text" placeholder="username">
+	                </li>
+	                <li class="nav-item">
+	                    <input class="login-input" id="pword" type="text" placeholder="password">
+	                </li>
+	                <li class="nav-item">
+	                    <a id="login-submit" class="nav-link topic-tab btn btn-primary" type="submit">Login</a>
+	                </li>             
+	            </ul>
+            </form>
+        </div>
+    </nav>
+</header>
 {{{body}}}
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

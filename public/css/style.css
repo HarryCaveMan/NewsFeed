@@ -1,48 +1,79 @@
  html,body {
     height:100%;
+    overflow:auto;
  }
  body { background-image:url("../images/green_cup.png"); }
       ul {
         padding-left:0;
         list-style-type: none;
       }
-      #wrapper,.row {
-        overflow:auto;
-      }
-      #wrapper {
-        background-image:url("../images/squared_metal.png");
-        width: 960px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 5%;
-        height:100%;
-      }
-      #articles {
-        height:785px;
-      }
-      #articles,#notes {
-        padding-left:7px;
-        padding-right:7px;
-        margin-bottom:50px;
-        background-color: #F2F6D0;
-        overflow-y:scroll;
-        min-height: 400px;
-        word-wrap:break-word;
-      }
-      #notes {
-        width:100%;
-      }
-      textarea, input {
-        display: block;
-        width: 100%;
-        background-color: #FCF5C7;
-      }
-      input {
-        height: 36px;
-        font-size: 24px;
-      }
-      textarea {
-        height: 200px;
-        font-size: 18px;
-      }
- }
+
+  a {
+    color:#EE411A;
+  }
+
+  #navbarSupportedContent {
+    justify-content: right;
+  }
+
+  .nav-item {
+    margin-left:5px;
+    margin-right:5px;
+  }
+
+  .login-input,#login-submit {
+    height:40px;
+  }
+  .login-input,.nav-item {
+    width:100px;
+  }
+
+  .navbar {
+    z-index:5;
+    width:100%;
+    position:fixed;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 0;
+    background-image:url("../images/old_moon.png");
+  }
+
+  .navbar .navbar-brand {
+    text-decoration: none;
+    font-size:30px;
+  }
+  #wrapper {
+    display:block;
+    background-image:url("../images/squared_metal.png");
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+  }
+  #articles {
+    height:785px;
+  }
+  #articles,#notes {
+    padding-left:7px;
+    padding-right:7px;
+    margin-bottom:50px;
+    background-color: #F2F6D0;
+    overflow-y:scroll;
+    min-height: 400px;
+    word-wrap:break-word;
+  }
+  #notes {
+    width:100%;
+  }
+  textarea, input {
+    display: block;
+    width: 100%;
+    background-color: #FCF5C7;
+  }
+  input {
+    font-size: 18px;
+  }
+  textarea {
+    height: 200px;
+    font-size: 18px;
+  }
+}
